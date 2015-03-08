@@ -17,6 +17,9 @@ TAR_FILE=${PACKAGE_NAME}-${DOCKER_VERSION}-${PACKAGE_REVISION}-${PACKAGE_ARCH}.t
 # compile Docker from source
 cd /src/docker
 git checkout v$DOCKER_VERSION
+#---disable-docker-proxy---
+
+#---disable-docker-proxy---
 export AUTO_GOPATH=1
 GOARM=6 ./hack/make.sh dynbinary
 
