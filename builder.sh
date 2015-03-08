@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 set -e
 
 # set env var
@@ -18,6 +19,7 @@ TAR_FILE=${PACKAGE_NAME}-${DOCKER_VERSION}-${PACKAGE_REVISION}-${PACKAGE_ARCH}.t
 cd /src/docker
 #---disable-docker-proxy---
 #git checkout v$DOCKER_VERSION
+git pull
 git checkout optional_userland_proxy
 #---disable-docker-proxy---
 export AUTO_GOPATH=1
