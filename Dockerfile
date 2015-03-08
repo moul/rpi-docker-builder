@@ -20,7 +20,7 @@ RUN pip install awscli
 RUN \
     mkdir -p /src && \
     cd /src && \
-    git clone https://github.com/docker/docker.git
+    git clone https://github.com/hypriot/docker.git
 
 # Add Docker specific files
 ADD files/version.h /usr/include/btrfs/version.h
