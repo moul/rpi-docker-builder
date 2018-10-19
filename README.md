@@ -1,5 +1,7 @@
 # rpi-docker-builder
 
+[![GuardRails badge](https://badges.production.guardrails.io/moul/rpi-docker-builder.svg)](https://www.guardrails.io)
+
 This builder runs natively on a [Raspberry Pi with Docker 1.4](http://blog.hypriot.com/post/hypriotos-back-again-with-docker-on-arm/) or later, or on a [Scaleway C1 ARM server](https://www.scaleway.com) with a `Docker 1.5 Image`.
 
 ###How to use
